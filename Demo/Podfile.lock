@@ -1,0 +1,47 @@
+PODS:
+  - BSText (1.1.3):
+    - YYImage
+  - LookinServer (1.1.4):
+    - LookinServer/Core (= 1.1.4)
+  - LookinServer/Core (1.1.4)
+  - SwiftyMarkdown (1.2.4):
+    - BSText
+    - YYWebImage
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - BSText (from `../BSText.podspec`)
+  - LookinServer (= 1.1.4)
+  - SwiftyMarkdown (from `../../Charts/`)
+  - YYWebImage
+
+SPEC REPOS:
+  trunk:
+    - LookinServer
+    - YYCache
+    - YYImage
+    - YYWebImage
+
+EXTERNAL SOURCES:
+  BSText:
+    :path: "../BSText.podspec"
+  SwiftyMarkdown:
+    :path: "../../Charts/"
+
+SPEC CHECKSUMS:
+  BSText: fde17ab2d7b591745f73a408de0eeed063009b6a
+  LookinServer: a5066d97f43d43b6ef69c51d6595d7ad615b67b2
+  SwiftyMarkdown: c07a16cebb1b971c53a8c3a0f957626a590f9def
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 9ea7c3563f714e29a80734fb64806e34d6fa0f5d
+
+COCOAPODS: 1.11.3
