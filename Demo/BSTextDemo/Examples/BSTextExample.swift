@@ -32,7 +32,7 @@ class BSTextExample: UITableViewController {
         addCell("Ruby Annotation", class: BSTextRubyExample.self)
         addCell("Async Display", class: BSTextAsyncExample.self)
         addCell("My Example Demo", class: MyExample.self)
-        addCell("trunk", class: TrunkViewController.self)
+        addCell("超过两行，首行打点", class: TrunkViewController.self)
 
         tableView.tableFooterView = UIView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: kExampleCellReuseId)

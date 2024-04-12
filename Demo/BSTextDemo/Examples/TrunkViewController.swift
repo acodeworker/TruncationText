@@ -21,7 +21,7 @@ class TrunkViewController:UIViewController{
     drawView.numberOfLines = 2
     drawView.textColor = UIColor.red
     drawView.setText(string)
-    drawView.backgroundColor = UIColor.white
+    drawView.backgroundColor = UIColor.lightGray
     self.view.addSubview(drawView)
     
     
