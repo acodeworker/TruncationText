@@ -107,8 +107,8 @@ typedef enum : NSUInteger {
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextSetTextMatrix(context, CGAffineTransformIdentity);
-    CGContextTranslateCTM(context, 0, self.bounds.size.height);
-    CGContextScaleCTM(context, 1, -1);
+//    CGContextTranslateCTM(context, 0, self.bounds.size.height);
+//    CGContextScaleCTM(context, 1, -1);
     
     // 绘制文字
     [self drawTextInContext:context];

@@ -36,7 +36,7 @@ public class TableViewCell:UITableViewCell{
   
   lazy var bgView:SwiftMarkDownView = {
     let bgView = SwiftMarkDownView()
-    bgView.backgroundColor = UIColor.white
+    bgView.backgroundColor = UIColor.clear
     return bgView
   }()
   
@@ -57,8 +57,11 @@ class MyExample: UITableViewController {
       let concurrentQueue = DispatchQueue(label: "com.example.concurrent", attributes: .concurrent)
       concurrentQueue.async {
         self.titles = [
-          "1. First item\n2. Second item\n3. Third item\n4. Fourth item",
-          "| 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
+          "I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.",
+            "I think I'll use it to format all of my documents from now on.",
+          "源码：[markdown-online-editor](https://github.com/nicejade/markdown-online-editor)",
+          "1. First item\n2. Second item\n3. Third item\n4. Fourth itemGithub 源码：[markdown-online-editor](https://github.com/nicejade/markdown-online-editor)",
+          "I think I'll use it to format all of my documents from now on.\n| 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
             "![这是图片](https://images.pexels.com/photos/19294343/pexels-photo-19294343.jpeg)",
             "I just love **bold text**.",
             "I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.",
@@ -66,10 +69,10 @@ class MyExample: UITableViewController {
           "I just love **bold text**.",
           "I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.",
           "### Heading level 3 \nThis is the first line.And this is the second line.",
-          "| 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
+          "I think I'll use it to format all of my documents from now on. | 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
             "![这是图片](https://images.pexels.com/photos/19294343/pexels-photo-19294343.jpeg)",
-          "1. First item\n2. Second item\n3. Third item\n4. Fourth item",
-          "| 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
+          "1. First item\n2. Second item\n3. Third item\n4. Fourth item ",
+          "I think I'll use it to format all of my documents from now on. | 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
             "![这是图片](https://images.pexels.com/photos/19294343/pexels-photo-19294343.jpeg)",
             "I just love **bold text**.",
             "I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.",
@@ -77,7 +80,7 @@ class MyExample: UITableViewController {
           "I just love **bold text**.",
           "I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.I think I'll use it to format all of my documents from now on.",
           "### Heading level 3 \nThis is the first line.And this is the second line.",
-          "| 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
+          "I think I'll use it to format all of my documents from now on. | 参数       | 智能半球摄像机 T1 | 智能枪型摄像机 T1 |\n|------------|-------------------|-------------------|\n| 产品尺寸   | 105*105*88mm      | 196*99*95mm       |\n| 电源输入   | 12V⎓1A, 9W MAX    | 12V⎓1A, 7W MAX; PoE(802.3af, 44V-57V),300mA MAX, 13W |\n| 分辨率     | 1920*1080p        | 2560*1440         |\n| 焦距       | 2.8mm             | 4mm               |\n| 视频编码   | H.265             | H.265             |\n| 工作温度   | -10℃~45℃         | -30℃~60℃         |\n| 工作湿度   | 0～95% RH，无冷凝 | 0～95% RH，无冷凝 |\n| 执行标准   | Q/QLML033         | Q/QLML033         |\n| 净重       | 263g              | 360g              |\n| 包装尺寸   |147*145*173mm      |232*110*102mm      |\n\n智能半球摄像机 T1的官方售价为xxx元，具体价格和购买时间及渠道有关，想了解更多详情，请前往官方网站或天猫旗舰店进行查询。",
             "![这是图片](https://images.pexels.com/photos/19294343/pexels-photo-19294343.jpeg)"]
         for text in self.titles {
           let md = SwiftyMarkdown(string: text)

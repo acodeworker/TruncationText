@@ -643,6 +643,7 @@ public class TextBorder: NSObject, NSCoding, NSCopying, NSSecureCoding {
 public enum ContentType {
 case tableView
 case uiimageView
+case link
 }
 
 /**
